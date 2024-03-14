@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <link rel="stylesheet" href="estilo.css">
+
+
+</head>
+<body>
+    <!-- SECCION INICIO -->
+    <section id="inicio">
+        <header>
+            <div class="contenido-header">
+                <div class="logo">
+                    <h1>El Jardín</h1>
+                </div>
+                <nav id="nav">
+                    <ul>
+                        <li>
+                            <a href="#inicio" onclick="seleccionar()">
+                                <i class="fa-solid fa-house"></i>
+                                <span>Inicio</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#sabores" onclick="seleccionar()">
+                                <i class="fa-solid fa-ice-cream"></i>
+                                <span>Sabores</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#platos" onclick="seleccionar()">
+                                <i class="fa-solid fa-utensils"></i>
+                                <span>Platos</span>
+                            </a></li>
+                        <li>
+                            <a href="#blog" onclick="seleccionar()">
+                                <i class="fa-solid fa-pen"></i>
+                                <span>Blog</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#contacto" onclick="seleccionar()">
+                                <i class="fa-solid fa-comments"></i>
+                                <span>Contacto</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="social">
+                    <a href="tel:+1123-456-7890">
+                        <i class="fa-solid fa-phone"></i>+2281215822/+5633394762
+                    </a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-twitter"></i></a> 
+                </div>
+                <div class="nav-responsive" id="bar" onclick="mostrarOcultarMenu()">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </div>
+        </header>
+        <!-- Carrusel -->
+        <div class="carrusel">
+            <div class="gallery js-flickity" data-flickity-options='{ "wrapAround":true, "pageDots": false, "autoPlay": true}'>
+                <div class="gallery-cell" >
+                    <img src="img/1.jpg" alt="">
+                </div>
+                <div class="gallery-cell">
+                    <img src="img/2.jpg" alt="">
+                </div>
+                <div class="gallery-cell">
+                    <img src="img/3.jpg" alt="">
+                </div>
+                <div class="gallery-cell">
+                    <img src="img/4.jpg" alt="">
+                </div>
+            </div>
+            <div class="info">
+                <h2>Restaurante Familiar El Jardín</h2>
+                <p>Comidas exquistias para el paladar</p>
+                <button>Leer Más</button>
+            </div>
+        </div>
+
+    </section>
+
+    <section id="menu">
+    	<h1>Menu</h1>
+    </section>
+
+    <!-- SECCION SABORES -->
+    <section id="sabores">
+        <h2>Entrada</h2>
+        <div class="fila">
+	    <div class="entradas">
+            	<ol>
+			<li>Sopa de Codito con Acelgas o Consome de Pollo</li>
+			<li>Espaguetti a la Italiana o Arroz</li>
+	    	</ol>
+	    </div>
+        </div>
+
+    </section>
+
+    <!-- SECCION PLATOS -->
+    <section id="platos">
+        <h2>Platos</h2>
+
+        <div class="fila">
+            <div class="item">
+		<h3>$80</h3>
+		<br>
+                <ul>
+  			<li>Pollo entomatado</li>
+  			<li>Albondigas de res</li>
+			<li>Alambre de cerdo</li>
+			<li>Torta de espinacas en salsa verde</li>
+			<li>Tortas de papa con ensalada</li>
+			<li>Tortas de pollo en jitomate</li>
+			<li>Ensalada de atún o pollo</li>
+			<li>Crepas de huitlacoche o champiñones</li>
+			<li>Aguacate relleno de atún</li>
+		</ul>
+            </div>
+            <div class="item">
+                <h3>$90</h3>
+		<br>
+                <ul>
+  			<li>Pechuga al gusto (ensalada a la nieve, a la gordon blue, empanizada, a la parmesana, rellena de jamon y queso, bañada en salsa verde, etc.)</li>
+  			<li>Pollo a la plancha con papas a la francesa</li>
+			<li>Chile relleno de queso en jitomate</li>
+			<li>Bistec asado con ensalada</li>
+			<li>Bistec a la tampiqueña con enchiladas</li>
+			<li>Milanesa especial con dos enchiladas</li>
+			<li>Hamburguesa de res c/n papas a la francesa</li>
+			<li>Chicharron en salsa verde</li>
+			<li>Chilaquiles con pollo</li>
+			<li>Enchiladas con mole poblano</li>
+			<li>Enchiladas verdes con pollo</li>
+			<li>Enchiladas suizas gratinadas</li>
+		</ul>
+            </div>
+            <div class="item">
+                <h3>$100</h3>
+		<br>
+                <ul>
+  			<li>Pollo con mole poblano</li>
+  			<li>Filete de pescado al gusto (empapelado, a la veracruzana, al mojo de ajo, al ajillo, a la diabla, empanizado, etc.)</li>
+		</ul>
+            </div>
+	    <div class="item">
+                <h3>$130</h3>
+		<br>
+                <ul>
+  			<li>Camarones al gusto (al ajillo, a la diabla, empanizados, enchipotlados, al mojo de ajo, etc.)</li>
+		</ul>
+            </div>
+	    <div class="item">
+                <h3>$150</h3>
+		<br>
+                <ul>
+  			<li>Arrachera con papas a la francesa con enchiladas o ensalada</li>
+  			<li>Costilla de res corte angus con chilaquiles o papas a la francesa</li>
+			<li>Mojarras al gusto</li>
+			<li>Chamorro enchilado</li>
+			<li>Langostinos al gusto (al mojo de ajo, etc.)</li>
+		</ul>
+            </div>
+        </div>
+
+    </section>
+
+    <br>
+    
+    <!-- SECCION Postres -->
+    <section id="platos">
+        <h2>Postres</h2>
+	<div class="fila">
+        	<dl>
+  			<dt>Helado de Chocolate</dt>
+  			<dd>$40</dd>
+  			<dt>Plátanos Fritos</dt>
+  			<dd>$40</dd>
+  			<dt>Fresas con Crema</dt>
+  			<dd>$40</dd>
+			<dt>Duraznos</dt>
+  			<dd>$40</dd>
+			<dt>Consome Infantil</dt>
+  			<dd>$35</dd>
+			<dt>Consome Especial</dt>
+  			<dd>$50</dd>
+			<dt>Plátano Tabasco</dt>
+  			<dd>$10</dd>
+			<dt>Sopas o Barra Adicional</dt>
+  			<dd>$20</dd>
+			<dt>Cafe de la Casa</dt>
+  			<dd>$15</dd>
+		</dl>
+	</div>
+
+    </section>
+
+    <!-- SECCION BLOG -->
+    <section id="blog">
+        <button onclick="window.location.href='index.html';">Regresar</button>
+    </section>
+
+    <!-- SECCION CONTACTO Y PIE DE PAGINA -->
+    <section id="contacto">
+        <div class="fila">
+            <div class="col">
+                <h1>El Jardín</h1>
+            </div>
+            <div class="col">
+                <h3>Menú</h3>
+                <a href="#inicio">Inicio</a>
+                <a href="#sabores">Sabores</a>
+                <a href="#sabores">Platos</a>
+                <a href="#sabores">Blog</a>
+            </div>
+            <div class="col">
+                <h3>Cheffs</h3>
+                <a href="#">Marcos G.</a>
+                <a href="#">María L.</a>
+                <a href="#">Marta J.</a>
+            </div>
+            <div class="col">
+                <h3>Social Media</h3>
+                <div class="media">
+                    <i class="fa-brands fa-twitter"></i> <a href="#">Twitter</a>
+                </div>
+                <div class="media">
+                    <i class="fa-brands fa-instagram"></i> <a href="#">Instagram</a>
+                </div>
+            </div>
+            <div class="col">
+                <h3>Visitanos</h3>
+		<p>Calle 30 No. 25 Col. El Rodeo</p>
+		<p>A dos Cuadras del metrobus 'El Rodeo'</p>
+                <!--<input type="text" placeholder="Tu correo">-->
+                <!--<input type="submit" class="enviar">-->
+            </div>
+        </div>
+
+    </section>
+    
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
